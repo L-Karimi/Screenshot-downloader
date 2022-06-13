@@ -25,4 +25,11 @@ async function from loadImage(){
 let button = document.getElementById('btn')
 button.addEventListener("click",async(event)=>){
     event.preventDefault()
+    try{
+        loadImage()
+    }catch(e){
+        console.log("Error loading page!");
+        console.log(e);
+    }
+   
 }
